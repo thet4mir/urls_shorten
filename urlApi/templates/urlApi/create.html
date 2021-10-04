@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST" action="" no-validate>
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Paste your URL</label>
+        <input type="text" name="url" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    {% if shorten_url %}
+        {{shorten_url}}
+    {% endif %}
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

@@ -1,0 +1,8 @@
+*.swp
+*.swn
+*.swo
+*.pyc
+*.pdf
+activate
+__pycache__
+main/setttings/dev
